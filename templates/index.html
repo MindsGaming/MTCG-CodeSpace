@@ -1,9 +1,20 @@
 <head>
-    <title>{{ title }}</title>
+    <title>{MTCG - Community Space}</title>
+    <head>
     <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+            <script src="{{ url_for('static', filename='Home.js') }}"></script>
 
+ <link
+ href="{{ url_for('static', filename='') }}"
+      id="favicon"
+      rel="icon"
+    
+      type="image/jpeg"
+    />
+          </head>
 <body>
-    <div class="App">
+
+    <div class="hide">
         <header class="App-header">
             <img src="{{ url_for('static', filename='Octocat.png') }}" class="App-logo" alt="logo" />
             <p>
@@ -13,6 +24,265 @@
                 Edit <code>templates/index.html</code> and refresh to see your changes!
             </p>
         </header>
+    </div>
+       <div class="darkMode">
+      <div id="holder" class="holder">
+        <label class="title">
+          MTCG Community Ecosystem
+          <hr />
+        </label>
+        <br />
+        <label class="house-token" onclick="mtcgToken();">
+          <img
+            class="startIMG"
+            src="https://cdn.glitch.global/4d28a5f0-4bec-4873-9059-3319b8398254/Alien%20Astronaut%20.jpg"
+          />
+          Support the Ecosystem <br />
+        </label>
+        <label class="community-tokens" onclick="communityTokens();">
+          <img
+            class="startIMG"
+            src="https://cdn.glitch.global/4d28a5f0-4bec-4873-9059-3319b8398254/AIExpolore.jpg"
+          />
+          Explore Community Tokens
+        </label>
+      </div>
+      <br />
+      <div id="topics" class="topics">
+        <h3>Quick Topics</h3>
+        <a href="https://www.mintme.com/token/DWMW" target="_blank">
+          <label class="topic">Web Series</label></a
+        >
+        <a href="https://www.mintme.com/token/SatoriD" target="_blank">
+          <label class="topic">DMT Supreme</label>
+        </a>
+
+        <a href="https://www.mintme.com/token/bobdubbloon" target="_blank">
+          <label class="topic">Podcasts</label></a
+        >
+
+        <a href="https://www.mintme.com/token/withinthevacuum" target="_blank">
+          <label class="topic">Music</label></a
+        >
+
+        <a href="https://www.mintme.com/token/embers" target="_blank">
+          <label class="topic">Books</label></a
+        >
+      </div>
+
+      <div id="token-list" class="hide">
+        <br />
+        <label class="title">
+          <br />MTCG Community Ecosystem
+          <label class="back" id="back" onclick="communityTokens();">Back</label>
+          <hr />
+        </label>
+        <br />
+        <label class="token">
+          <img
+            class="smallIMG"
+            src="https://cdn.glitch.global/0b074a7d-1fb5-4eca-b20f-76c8d5a403a9/DWMW.png"
+          />
+          <label class="mini">
+            <h2>DWMW</h2>
+            <a
+              href="https://www.mintme.com/token/DWMW/MINTME/trade"
+              target="_blank"
+            >
+              <label class="shinyBTN">Support The project</label></a
+            >
+            <p>
+              Community Co-op Web Series
+              <br />
+              <a href="https://www.mintme.com/token/DWMW" target="_blank">
+                <label class="shinyBTN">Read More</label></a
+              >
+            </p>
+            <br />
+          </label>
+        </label>
+
+        <label class="token">
+          <img
+            class="smallIMG"
+            src="https://cdn.glitch.global/0b074a7d-1fb5-4eca-b20f-76c8d5a403a9/SatoriD.png"
+          />
+          <label class="mini">
+            <h2>SatoriD</h2>
+            <a
+              href="https://www.mintme.com/token/SatoriD/MINTME/trade"
+              target="_blank"
+            >
+              <label class="shinyBTN">Support The Project</label></a
+            >
+            <p>
+              Creator, Games, DMT Supreme
+              <br />
+              <a href="https://www.mintme.com/token/SatoriD" target="_blank">
+                <label class="shinyBTN">Read More</label></a
+              >
+            </p>
+            <br />
+          </label>
+        </label>
+
+        <label class="token">
+          <img
+            class="smallIMG"
+            src="https://cdn.glitch.global/0b074a7d-1fb5-4eca-b20f-76c8d5a403a9/Bobdubbloon.jpeg"
+          />
+          <label class="mini">
+            <h2>bobdubbloon</h2>
+            <a
+              href="https://www.mintme.com/token/bobdubbloon/MINTME/trade"
+              target="_blank"
+            >
+              <label class="shinyBTN">Support The project</label></a
+            >
+            <p>
+              Podcasts, Recording, Editing, Creator
+              <br />
+              <a
+                href="https://www.mintme.com/token/bobdubbloon"
+                target="_blank"
+              >
+                <label class="shinyBTN">Read More</label></a
+              >
+            </p>
+            <br />
+          </label>
+        </label>
+
+        <label class="token">
+          <img
+            class="smallIMG"
+            src="https://cdn.glitch.global/0b074a7d-1fb5-4eca-b20f-76c8d5a403a9/withinthevacuum.png"
+          />
+          <label class="mini">
+            <h2>withinthevacuum</h2>
+            <a
+              href="https://www.mintme.com/token/withinthevacuum/MINTME/trade"
+              target="_blank"
+            >
+              <label class="shinyBTN">Support The Project</label></a
+            >
+            <p>
+              Music, Creator, Cast and Crew
+              <br />
+              <a
+                href="https://www.mintme.com/token/withinthevacuum"
+                target="_blank"
+              >
+                <label class="shinyBTN">Read More</label></a
+              >
+            </p>
+            <br />
+          </label>
+        </label>
+
+        <label class="token">
+          <img
+            class="smallIMG"
+            src="https://cdn.glitch.global/0b074a7d-1fb5-4eca-b20f-76c8d5a403a9/Embers.jpeg"
+          />
+          <label class="mini">
+            <h2>Embers</h2>
+            <a
+              href="https://www.mintme.com/token/embers/MINTME/trade"
+              target="_blank"
+            >
+              <label class="shinyBTN">Support The Project</label></a
+            >
+            <p>
+              Book Saga, Myth, Imagination
+              <br />
+              <a href="https://www.mintme.com/token/embers" target="_blank">
+                <label class="shinyBTN">Read More</label></a
+              >
+            </p>
+            <br />
+          </label>
+        </label>
+
+        <label class="token">
+          <img
+            class="smallIMG"
+            src="https://cdn.glitch.global/0b074a7d-1fb5-4eca-b20f-76c8d5a403a9/ottoken.png"
+          />
+          <label class="mini">
+            <h2>Ottoken</h2>
+            <a
+              href="https://www.mintme.com/token/ottoken/MINTME/trade"
+              target="_blank"
+            >
+              <label class="shinyBTN">Support The Project</label></a
+            >
+            <p>
+              Cast and Crew, Inpiration, Dreamer
+              <br />
+              <a href="https://www.mintme.com/token/ottoken" target="_blank">
+                <label class="shinyBTN">Read More</label></a
+              >
+            </p>
+            <br />
+          </label>
+        </label>
+
+        <label class="token">
+          <img
+            class="smallIMG"
+            src="https://cdn.glitch.global/0b074a7d-1fb5-4eca-b20f-76c8d5a403a9/Dreams.webp"
+          />
+          <label class="mini">
+            <h2>Dreams</h2>
+            <a
+              href="https://www.mintme.com/token/dreams/MINTME/trade"
+              target="_blank"
+            >
+              <label class="shinyBTN">Support The Project</label></a
+            >
+            <p>
+              Community Airdrop, Building, Dreaming
+              <br />
+              <a href="https://www.mintme.com/token/dreams" target="_blank">
+                <label class="shinyBTN">Read More</label></a
+              >
+            </p>
+            <br />
+          </label>
+        </label>
+
+        <label class="token">
+          <img
+            class="smallIMG"
+            src="https://cdn.glitch.global/0b074a7d-1fb5-4eca-b20f-76c8d5a403a9/MG%40.jpeg"
+          />
+          <label class="mini">
+            <h2>MindsGaming</h2>
+            <a
+              href="https://www.mintme.com/token/MindsGaming/MINTME/trade"
+              target="_blank"
+            >
+              <label class="shinyBTN">Support The Project</label></a
+            >
+            <p>
+              Creator, Builder, Dreamer
+              <br />
+              <a
+                href="https://www.mintme.com/token/MindsGaming"
+                target="_blank"
+              >
+                <label class="shinyBTN">Read More</label></a
+              >
+            </p>
+            <br />
+          </label>
+        </label>
+        <label class="footers"></label>
+
+        <br />
+        <br />
+      </div>
     </div>
 </body>
 
